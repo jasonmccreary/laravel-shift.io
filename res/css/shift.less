@@ -1,0 +1,144 @@
+/* Variables */
+@grey: #f0f2f1;
+@white: #fff;
+@primary: #f4645f;
+@secondary: #f3bd92;
+@text-grey: #aeaeae;
+@text: #525252;
+
+body {
+    background: @text;
+    color: @text;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    margin-top: 0;
+}
+
+.btn-primary {
+        background-color: @white;
+        border-color: @white;
+        color: @primary;
+
+        &:active {
+            background-color: darken(@white, 5%);
+            border-color: darken(@white, 5%);
+            color: @primary;
+        }
+
+        &:focus, &:hover {
+            background-color: darken(@white, 5%);
+            border-color: darken(@white, 5%);
+            color: @primary;
+        }
+}
+
+.banner {
+    background: @primary;
+    background-image:
+    linear-gradient(
+      to top right,
+      @secondary, @primary
+    );
+    color: @white;
+    text-align: center;
+
+    .logo {
+        background: url(../img/bg-header.png) no-repeat 42% 15px;
+        min-height: 355px;
+        padding: 116px 0 0;
+
+        h1 {
+            font-size: 72px;
+            font-weight: 200;
+            letter-spacing: 5px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
+            text-shadow:
+                0 1px @primary,
+                -1px 0 @secondary,
+                -1px 2px @primary,
+                -2px 1px @secondary,
+                -2px 3px @primary,
+                -3px 2px @secondary,
+                -3px 4px @primary,
+                -4px 3px @secondary,
+                -4px 5px @primary,
+                -5px 4px @secondary,
+                -5px 6px @primary,
+                -6px 5px @secondary,
+                -6px 7px @primary,
+                -7px 6px @secondary,
+                -7px 8px @primary,
+                -8px 7px @secondary;
+        }
+
+        h3 {
+            color: @grey;
+            font-weight: 400;
+            margin: 0;
+            text-shadow: -1px 1px @secondary;
+        }
+    }
+}
+
+.how {
+    background: @white;
+    padding: 60px 0;
+
+    h2 {
+        text-align: center;
+    }
+
+    .row {
+        text-align: center;
+
+        i {
+            color: @primary;
+        }
+
+        h3 {
+            color: @primary;
+        }
+
+        p {
+
+        }
+    }
+}
+
+.pricing {
+    background: @grey;
+    padding: 60px 0;
+    text-align: center;
+
+    .panel {
+        box-shadow: 1px 1px 1px @text-grey;
+        padding: 14px 10px;
+        text-align: left;
+
+        h3 {
+            color: @primary;
+            font-weight: 400;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.credits {
+    color: @white;
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+}
