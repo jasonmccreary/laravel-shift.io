@@ -5,6 +5,7 @@
 @secondary: #f3bd92;
 @text-grey: #aeaeae;
 @text: #525252;
+@green: #57ac18;
 
 body {
     background: @text;
@@ -52,9 +53,9 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 
     .logo {
-        background: url(../img/bg-header.png) no-repeat 42% 15px;
-        min-height: 355px;
-        padding: 116px 0 0;
+        // background: url(../img/bg-header.png) no-repeat 42% 15px;
+        min-height: 255px;
+        padding: 60px 0;
 
         h1 {
             font-size: 72px;
@@ -108,10 +109,6 @@ h1, h2, h3, h4, h5, h6 {
         h3 {
             color: @primary;
         }
-
-        p {
-
-        }
     }
 }
 
@@ -128,6 +125,18 @@ h1, h2, h3, h4, h5, h6 {
         h3 {
             color: @primary;
             font-weight: 400;
+            text-align: center;
+        }
+
+        .price-tag {
+            background: @green;
+            border-radius: 50px;
+            color: @white;
+            display: block;
+            font-size: 26px;
+            margin: 8px auto;
+            padding: 6px 8px;
+            text-align: center;
         }
 
         p:last-child {
