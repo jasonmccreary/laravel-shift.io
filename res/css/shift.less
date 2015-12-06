@@ -5,6 +5,7 @@
 @secondary: #f3bd92;
 @text-grey: #aeaeae;
 @text: #525252;
+@black: #525252;
 @green: #57ac18;
 
 body {
@@ -53,7 +54,6 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 
     .logo {
-        // background: url(../img/bg-header.png) no-repeat 42% 15px;
         min-height: 255px;
         padding: 60px 0;
 
@@ -91,6 +91,68 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.banner-inside {
+    background: @primary;
+    background-image:
+    linear-gradient(
+      to top right,
+      @secondary, @primary
+    );
+    border-bottom: 1px solid darken(@primary, 10%);
+    color: @white;
+    text-align: center;
+
+    .logo {
+        padding: 10px 0;
+
+        h1 {
+            font-size: 32px;
+            font-weight: 200;
+            letter-spacing: 5px;
+            margin: 10px 0 8px 0;
+            text-transform: uppercase;
+            text-shadow:
+                0 1px @primary,
+                -1px 0 @secondary,
+                -1px 2px @primary,
+                -2px 1px @secondary,
+                -2px 3px @primary,
+                -3px 2px @secondary,
+                -3px 4px @primary,
+                -4px 3px @secondary,
+                -4px 5px @primary,
+                -5px 4px @secondary,
+        }
+
+        h3 {
+            color: @white;
+            font-size: 16px;
+            font-weight: 400;
+            margin: 0 0 10px;
+        }
+    }
+}
+
+.content {
+    background: @white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .primary-content {
+        h2.page-title {
+            color: @primary;
+        }
+    }
+
+    .sidebar {
+        background: @secondary;
+        border-radius: 8px;
+        color: @white;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+}
+
 .how {
     background: @white;
     padding: 60px 0;
@@ -106,6 +168,12 @@ h1, h2, h3, h4, h5, h6 {
             color: @primary;
         }
 
+        .pull {
+            max-width: 32px;
+            height: auto;
+            margin-bottom: 6px;
+        }
+
         h3 {
             color: @primary;
         }
@@ -117,30 +185,51 @@ h1, h2, h3, h4, h5, h6 {
     padding: 60px 0;
     text-align: center;
 
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        background: @primary;
+        background-image:
+        linear-gradient(
+          to top right,
+          lighten(@green, 20%), @green
+        );
+        border: 1px solid @white;
+        border-radius: 150px;
+        box-shadow: 2px 2px 2px @text-grey;
+        color: @white;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0 0 20px;
+        padding: 20px 35px;
+        text-align: center;
+    }
+
     .panel {
         box-shadow: 1px 1px 1px @text-grey;
-        padding: 14px 10px;
+        padding: 14px 10px 14px;
         text-align: left;
-
-        h3 {
-            color: @primary;
-            font-weight: 400;
-            text-align: center;
-        }
+        margin-top: -45px;
 
         .price-tag {
-            background: @green;
-            border-radius: 50px;
-            color: @white;
-            display: block;
-            font-size: 26px;
-            margin: 8px auto;
-            padding: 6px 8px;
-            text-align: center;
+            color: @green;
         }
 
         p:last-child {
             margin-bottom: 0;
+        }
+    }
+
+    .comingsoon {
+        background: @black;
+
+        h1 {
+            color: @white;
+            margin: 70px 0;
+            text-align: center;
         }
     }
 }
