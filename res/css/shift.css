@@ -82,6 +82,19 @@ h6 {
   font-weight: 400;
   margin: 0 0 10px;
 }
+.btn-primary {
+  background: #f4645f;
+  box-shadow: 1px 1px 1px #aeaeae;
+  border: 0;
+  color: #ffffff;
+}
+.btn-primary:hover,
+.btn-primary:visited,
+.btn-primary:active,
+.btn-primary:focus {
+  background: #f24d47 !important;
+  color: #ffffff !important;
+}
 .content {
   background: #ffffff;
   padding-top: 40px;
@@ -180,15 +193,6 @@ h6 {
 }
 .pricing ul.sign-in li {
   margin: 0 20px;
-}
-.pricing ul.sign-in li .btn-primary {
-  background: #f4645f;
-  box-shadow: 1px 1px 1px #aeaeae;
-  border: 0;
-  color: #ffffff;
-}
-.pricing ul.sign-in li .btn-primary:hover {
-  background: #f24d47;
 }
 .credits {
   color: #ffffff;
