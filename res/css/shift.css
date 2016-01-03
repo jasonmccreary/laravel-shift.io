@@ -1,9 +1,14 @@
 /* Variables */
+html {
+  position: relative;
+  min-height: 100%;
+}
 body {
   background: #ffffff;
   color: #525252;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
+  margin-bottom: 80px;
 }
 .container {
   margin: 0 auto;
@@ -60,12 +65,11 @@ h6 {
 .banner-inside {
   background: #f4645f;
   background-image: linear-gradient(to top right, #f3bd92, #f4645f);
-  border-bottom: 1px solid #f1362f;
   color: #ffffff;
   text-align: center;
 }
 .banner-inside .logo {
-  padding: 10px 0;
+  padding: 20px 0 10px;
 }
 .banner-inside .logo h1 {
   font-size: 32px;
@@ -75,14 +79,23 @@ h6 {
   text-transform: uppercase;
   text-shadow: 0 1px #f4645f, -1px 0 #f3bd92, -1px 2px #f4645f, -2px 1px #f3bd92, -2px 3px #f4645f, -3px 2px #f3bd92, -3px 4px #f4645f, -4px 3px #f3bd92, -4px 5px #f4645f, -5px 4px #f3bd92;
 }
+.banner-inside .logo h1 a,
+.banner-inside .logo h1 a:hover,
+.banner-inside .logo h1 a:visited,
+.banner-inside .logo h1 a:active,
+.banner-inside .logo h1 a:focus {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
 .banner-inside .logo h3 {
   color: #ffffff;
   font-size: 16px;
   font-weight: 400;
-  margin: 0 0 10px;
+  margin: 0 0 20px;
 }
 .btn,
-.btn-primary {
+.btn-primary,
+button {
   background: #f4645f;
   background-image: linear-gradient(to top right, #f7928f, #f4645f);
   box-shadow: 1px 1px 1px #aeaeae;
@@ -91,12 +104,36 @@ h6 {
 }
 .btn:hover,
 .btn-primary:hover,
+button:hover,
 .btn:visited,
 .btn-primary:visited,
+button:visited,
 .btn:active,
 .btn-primary:active,
+button:active,
 .btn:focus,
-.btn-primary:focus {
+.btn-primary:focus,
+button:focus {
+  background: #f4645f !important;
+  color: #ffffff !important;
+}
+.stripe-button-el {
+  background-image: linear-gradient(to top right, #f7928f, #f4645f) !important;
+  border: 0 !importnat;
+}
+.stripe-button-el span {
+  background: #f4645f !important;
+  background-image: linear-gradient(to top right, #f7928f, #f4645f) !important;
+  box-shadow: 1px 1px 1px #aeaeae !important;
+  border: 0 !important;
+  color: #ffffff !important;
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 16px !important;
+}
+.stripe-button-el span:hover,
+.stripe-button-el span:visited,
+.stripe-button-el span:active,
+.stripe-button-el span:focus {
   background: #f4645f !important;
   color: #ffffff !important;
 }
@@ -209,8 +246,33 @@ h6 {
 }
 .credits {
   background: #525252;
+  bottom: 0;
   color: #ffffff;
   font-size: 14px;
+  height: 80px;
   padding: 10px 0;
+  position: absolute;
   text-align: center;
+  width: 100%;
+}
+.credits .social-icons ul {
+  margin: 0;
+}
+.credits .social-icons ul li {
+  margin: 0 10px;
+}
+@media (min-width: 768px) {
+  body {
+    margin-bottom: 50px;
+  }
+  .credits {
+    text-align: left;
+    height: 50px;
+  }
+  .credits p {
+    margin: 0;
+  }
+  .credits .social-icons {
+    text-align: right;
+  }
 }

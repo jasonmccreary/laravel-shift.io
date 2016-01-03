@@ -8,11 +8,17 @@
 @black: #525252;
 @green: #57ac18;
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     background: @white;
     color: @text;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
+    margin-bottom: 80px;
 }
 
 .container {
@@ -97,12 +103,11 @@ h1, h2, h3, h4, h5, h6 {
       to top right,
       @secondary, @primary
     );
-    border-bottom: 1px solid darken(@primary, 10%);
     color: @white;
     text-align: center;
 
     .logo {
-        padding: 10px 0;
+        padding: 20px 0 10px;
 
         h1 {
             font-size: 32px;
@@ -120,19 +125,24 @@ h1, h2, h3, h4, h5, h6 {
                 -3px 4px @primary,
                 -4px 3px @secondary,
                 -4px 5px @primary,
-                -5px 4px @secondary,
+                -5px 4px @secondary;
+
+                a, a:hover, a:visited, a:active, a:focus {
+                    color: @white !important;
+                    text-decoration: none !important;
+                }
         }
 
         h3 {
             color: @white;
             font-size: 16px;
             font-weight: 400;
-            margin: 0 0 10px;
+            margin: 0 0 20px;
         }
     }
 }
 
-.btn, .btn-primary {
+.btn, .btn-primary, button {
     background: @primary;
     background-image:
     linear-gradient(
@@ -146,6 +156,34 @@ h1, h2, h3, h4, h5, h6 {
     &:hover, &:visited, &:active, &:focus {
         background: @primary !important;
         color: @white !important;
+    }
+}
+
+.stripe-button-el {
+    background-image:
+    linear-gradient(
+        to top right,
+        lighten(@primary, 10%), @primary
+        ) !important;
+    border: 0 !importnat;
+
+    span {
+        background: @primary !important;
+        background-image:
+        linear-gradient(
+            to top right,
+            lighten(@primary, 10%), @primary
+            ) !important;
+        box-shadow: 1px 1px 1px @text-grey !important;
+        border: 0 !important;
+        color: @white !important;
+        font-family: 'Source Sans Pro', sans-serif !important;
+        font-size: 16px !important;
+
+        &:hover, &:visited, &:active, &:focus {
+            background: @primary !important;
+            color: @white !important;
+        }
     }
 }
 
@@ -285,8 +323,41 @@ h1, h2, h3, h4, h5, h6 {
 
 .credits {
     background: @text;
+    bottom: 0;
     color: @white;
     font-size: 14px;
+    height: 80px;
     padding: 10px 0;
+    position: absolute;
     text-align: center;
+    width: 100%;
+
+    .social-icons {
+        ul {
+            margin: 0;
+
+            li {
+                margin: 0 10px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        margin-bottom: 50px;
+    }
+
+    .credits {
+        text-align: left;
+        height: 50px;
+
+        p {
+            margin: 0;
+        }
+
+        .social-icons {
+            text-align: right;
+        }
+    }
 }
