@@ -1,6 +1,6 @@
 /* Variables */
 body {
-  background: #525252;
+  background: #ffffff;
   color: #525252;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
@@ -56,7 +56,6 @@ h6 {
   color: #f0f2f1;
   font-weight: 400;
   margin: 0;
-  text-shadow: -1px 1px #f3bd92;
 }
 .banner-inside {
   background: #f4645f;
@@ -82,17 +81,23 @@ h6 {
   font-weight: 400;
   margin: 0 0 10px;
 }
+.btn,
 .btn-primary {
   background: #f4645f;
+  background-image: linear-gradient(to top right, #f7928f, #f4645f);
   box-shadow: 1px 1px 1px #aeaeae;
   border: 0;
   color: #ffffff;
 }
+.btn:hover,
 .btn-primary:hover,
+.btn:visited,
 .btn-primary:visited,
+.btn:active,
 .btn-primary:active,
+.btn:focus,
 .btn-primary:focus {
-  background: #f24d47 !important;
+  background: #f4645f !important;
   color: #ffffff !important;
 }
 .content {
@@ -131,6 +136,7 @@ h6 {
 }
 .how h2 {
   text-align: center;
+  margin-bottom: 40px;
 }
 .how .row {
   text-align: center;
@@ -162,7 +168,7 @@ h6 {
   box-shadow: 2px 2px 2px #aeaeae;
   color: #ffffff;
   display: inline-block;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 400;
   margin: 0 0 20px;
   padding: 20px 19px;
@@ -170,12 +176,19 @@ h6 {
 }
 .pricing .panel {
   box-shadow: 1px 1px 1px #aeaeae;
-  padding: 14px 10px 14px;
+  padding: 34px 10px 14px;
   text-align: left;
   margin-top: -45px;
 }
 .pricing .panel .price-tag {
-  color: #57ac18;
+  background: #fef7f2;
+  border: 1px solid #f3bd92;
+  border-radius: 4px;
+  color: #f4645f;
+  display: block;
+  padding: 8px;
+  text-align: center;
+  margin: 18px auto 0;
 }
 .pricing .panel p:last-child {
   margin-bottom: 0;
@@ -192,9 +205,10 @@ h6 {
   margin: 20px 0 0;
 }
 .pricing ul.sign-in li {
-  margin: 0 20px;
+  margin: 0 20px 20px;
 }
 .credits {
+  background: #525252;
   color: #ffffff;
   font-size: 14px;
   padding: 10px 0;

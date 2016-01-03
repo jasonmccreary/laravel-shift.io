@@ -9,7 +9,7 @@
 @green: #57ac18;
 
 body {
-    background: @text;
+    background: @white;
     color: @text;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
@@ -86,7 +86,6 @@ h1, h2, h3, h4, h5, h6 {
             color: @grey;
             font-weight: 400;
             margin: 0;
-            text-shadow: -1px 1px @secondary;
         }
     }
 }
@@ -133,14 +132,19 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.btn-primary {
+.btn, .btn-primary {
     background: @primary;
+    background-image:
+    linear-gradient(
+      to top right,
+      lighten(@primary, 10%), @primary
+    );
     box-shadow: 1px 1px 1px @text-grey;
     border: 0;
     color: @white;
 
     &:hover, &:visited, &:active, &:focus {
-        background: darken(@primary, 5%) !important;
+        background: @primary !important;
         color: @white !important;
     }
 }
@@ -188,6 +192,7 @@ h1, h2, h3, h4, h5, h6 {
 
     h2 {
         text-align: center;
+        margin-bottom: 40px;
     }
 
     .row {
@@ -230,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
         box-shadow: 2px 2px 2px @text-grey;
         color: @white;
         display: inline-block;
-        font-size: 16px;
+        font-size: 24px;
         font-weight: 400;
         margin: 0 0 20px;
         padding: 20px 19px;
@@ -239,12 +244,19 @@ h1, h2, h3, h4, h5, h6 {
 
     .panel {
         box-shadow: 1px 1px 1px @text-grey;
-        padding: 14px 10px 14px;
+        padding: 34px 10px 14px;
         text-align: left;
         margin-top: -45px;
 
         .price-tag {
-            color: @green;
+            background: lighten(@secondary, 21%);;
+            border: 1px solid @secondary;
+            border-radius: 4px;
+            color: @primary;
+            display: block;
+            padding: 8px;
+            text-align: center;
+            margin: 18px auto 0;
         }
 
         p:last-child {
@@ -266,12 +278,13 @@ h1, h2, h3, h4, h5, h6 {
         margin: 20px 0 0;
 
         li {
-            margin: 0 20px;
+            margin: 0 20px 20px;
         }
     }
 }
 
 .credits {
+    background: @text;
     color: @white;
     font-size: 14px;
     padding: 10px 0;
