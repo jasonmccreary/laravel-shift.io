@@ -321,6 +321,12 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.shrug {
+    color: @primary;
+    font-size: 80px;
+    text-align: center;
+}
+
 .credits {
     background: @text;
     bottom: 0;
@@ -332,12 +338,17 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     width: 100%;
 
+    a:hover {
+        color: @white;
+    }
+
     .social-icons {
         ul {
             margin: 0;
 
             li {
                 margin: 0 10px;
+                vertical-align: middle;
             }
         }
     }

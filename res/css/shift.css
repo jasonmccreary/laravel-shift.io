@@ -244,6 +244,11 @@ button:focus {
 .pricing ul.sign-in li {
   margin: 0 20px 20px;
 }
+.shrug {
+  color: #f4645f;
+  font-size: 80px;
+  text-align: center;
+}
 .credits {
   background: #525252;
   bottom: 0;
@@ -255,11 +260,15 @@ button:focus {
   text-align: center;
   width: 100%;
 }
+.credits a:hover {
+  color: #ffffff;
+}
 .credits .social-icons ul {
   margin: 0;
 }
 .credits .social-icons ul li {
   margin: 0 10px;
+  vertical-align: middle;
 }
 @media (min-width: 768px) {
   body {
