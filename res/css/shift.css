@@ -244,6 +244,27 @@ button:focus {
 .pricing ul.sign-in li {
   margin: 0 20px 20px;
 }
+.testimonials {
+  background: #ffffff;
+  padding: 60px 0;
+  text-align: center;
+  position: relative;
+}
+.testimonials h2 {
+  color: #f4645f;
+}
+.testimonials blockquote {
+  font-size: 18px;
+  font-weight: 400;
+}
+.testimonials cite {
+  color: #f4645f;
+  font-size: 16px;
+  font-style: italic;
+}
+.testimonials .carousel-indicators li {
+  border: 1px solid #f4645f !important;
+}
 .shrug {
   color: #f4645f;
   font-size: 80px;
