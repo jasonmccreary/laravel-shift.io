@@ -245,24 +245,36 @@ button:focus {
   margin: 0 20px 20px;
 }
 .testimonials {
-  background: #ffffff;
-  padding: 60px 0;
+  background: #525252;
+  padding: 40px 0;
   text-align: center;
   position: relative;
 }
 .testimonials h2 {
-  color: #f4645f;
+  color: #ffffff;
 }
 .testimonials blockquote {
+  color: #ffffff;
   font-size: 18px;
   font-weight: 400;
+  border: 0;
+  min-height: 80px;
 }
 .testimonials cite {
-  color: #f4645f;
+  color: #ffffff;
   font-size: 16px;
   font-style: italic;
 }
+.testimonials .carousel-indicators {
+  display: inline-block;
+  margin: 10px auto 0;
+  padding: 0;
+  position: relative;
+  bottom: inherit;
+  left: inherit;
+}
 .testimonials .carousel-indicators li {
+  background: #ffffff;
   border: 1px solid #f4645f !important;
 }
 .shrug {

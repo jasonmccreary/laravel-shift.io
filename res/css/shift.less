@@ -322,28 +322,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .testimonials {
-    background: @white;
-    padding: 60px 0;
+    background: @black;
+    padding: 40px 0;
     text-align: center;
     position: relative;
 
     h2 {
-        color: @primary;
+        color: @white;
     }
 
     blockquote {
+        color: @white;
         font-size: 18px;
         font-weight: 400;
+        border: 0;
+        min-height: 80px;
     }
 
     cite {
-        color: @primary;
+        color: @white;
         font-size: 16px;
         font-style: italic;
     }
 
     .carousel-indicators {
+        display: inline-block;
+        margin: 10px auto 0;
+        padding: 0;
+        position: relative;
+        bottom: inherit;
+        left: inherit;
+
         li {
+            background: @white;
             border: 1px solid @primary !important;
         }
     }
