@@ -26,22 +26,22 @@ h6 {
 .btn-primary {
   background-color: #ffffff;
   border-color: #ffffff;
-  color: #f4645f;
+  color: #8892bf;
 }
 .btn-primary:active {
   background-color: #f2f2f2;
   border-color: #f2f2f2;
-  color: #f4645f;
+  color: #8892bf;
 }
 .btn-primary:focus,
 .btn-primary:hover {
   background-color: #f2f2f2;
   border-color: #f2f2f2;
-  color: #f4645f;
+  color: #8892bf;
 }
 .banner {
-  background: #f4645f;
-  background-image: linear-gradient(to top right, #f3bd92, #f4645f);
+  background: #8892bf;
+  background-image: linear-gradient(to top right, #4f5b93, #8892bf);
   color: #ffffff;
   text-align: center;
 }
@@ -55,7 +55,7 @@ h6 {
   letter-spacing: 5px;
   margin: 0 0 20px 0;
   text-transform: uppercase;
-  text-shadow: 0 1px #f4645f, -1px 0 #f3bd92, -1px 2px #f4645f, -2px 1px #f3bd92, -2px 3px #f4645f, -3px 2px #f3bd92, -3px 4px #f4645f, -4px 3px #f3bd92, -4px 5px #f4645f, -5px 4px #f3bd92, -5px 6px #f4645f, -6px 5px #f3bd92, -6px 7px #f4645f, -7px 6px #f3bd92, -7px 8px #f4645f, -8px 7px #f3bd92;
+  text-shadow: 0 1px #8892bf, -1px 0 #4f5b93, -1px 2px #8892bf, -2px 1px #4f5b93, -2px 3px #8892bf, -3px 2px #4f5b93, -3px 4px #8892bf, -4px 3px #4f5b93, -4px 5px #8892bf, -5px 4px #4f5b93, -5px 6px #8892bf, -6px 5px #4f5b93, -6px 7px #8892bf, -7px 6px #4f5b93, -7px 8px #8892bf, -8px 7px #4f5b93;
 }
 .banner .logo h3 {
   color: #f0f2f1;
@@ -63,8 +63,8 @@ h6 {
   margin: 0;
 }
 .banner-inside {
-  background: #f4645f;
-  background-image: linear-gradient(to top right, #f3bd92, #f4645f);
+  background: #8892bf;
+  background-image: linear-gradient(to top right, #4f5b93, #8892bf);
   color: #ffffff;
   text-align: center;
 }
@@ -77,7 +77,7 @@ h6 {
   letter-spacing: 5px;
   margin: 10px 0 8px 0;
   text-transform: uppercase;
-  text-shadow: 0 1px #f4645f, -1px 0 #f3bd92, -1px 2px #f4645f, -2px 1px #f3bd92, -2px 3px #f4645f, -3px 2px #f3bd92, -3px 4px #f4645f, -4px 3px #f3bd92, -4px 5px #f4645f, -5px 4px #f3bd92;
+  text-shadow: 0 1px #8892bf, -1px 0 #4f5b93, -1px 2px #8892bf, -2px 1px #4f5b93, -2px 3px #8892bf, -3px 2px #4f5b93, -3px 4px #8892bf, -4px 3px #4f5b93, -4px 5px #8892bf, -5px 4px #4f5b93;
 }
 .banner-inside .logo h1 a,
 .banner-inside .logo h1 a:hover,
@@ -96,8 +96,8 @@ h6 {
 .btn,
 .btn-primary,
 button {
-  background: #f4645f;
-  background-image: linear-gradient(to top right, #f7928f, #f4645f);
+  background: #8892bf;
+  background-image: linear-gradient(to top right, #a9b0d1, #8892bf);
   box-shadow: 1px 1px 1px #aeaeae;
   border: 0;
   color: #ffffff;
@@ -114,16 +114,16 @@ button:active,
 .btn:focus,
 .btn-primary:focus,
 button:focus {
-  background: #f4645f !important;
+  background: #8892bf !important;
   color: #ffffff !important;
 }
 .stripe-button-el {
-  background-image: linear-gradient(to top right, #f7928f, #f4645f) !important;
+  background-image: linear-gradient(to top right, #a9b0d1, #8892bf) !important;
   border: 0 !importnat;
 }
 .stripe-button-el span {
-  background: #f4645f !important;
-  background-image: linear-gradient(to top right, #f7928f, #f4645f) !important;
+  background: #8892bf !important;
+  background-image: linear-gradient(to top right, #a9b0d1, #8892bf) !important;
   box-shadow: 1px 1px 1px #aeaeae !important;
   border: 0 !important;
   color: #ffffff !important;
@@ -134,7 +134,7 @@ button:focus {
 .stripe-button-el span:visited,
 .stripe-button-el span:active,
 .stripe-button-el span:focus {
-  background: #f4645f !important;
+  background: #8892bf !important;
   color: #ffffff !important;
 }
 .content {
@@ -143,10 +143,10 @@ button:focus {
   padding-bottom: 40px;
 }
 .content h2.page-title {
-  color: #f4645f;
+  color: #8892bf;
 }
 .content .sidebar {
-  background: #f3bd92;
+  background: #4f5b93;
   border-radius: 8px;
   color: #ffffff;
   padding-top: 14px;
@@ -179,7 +179,7 @@ button:focus {
   text-align: center;
 }
 .how .row i {
-  color: #f4645f;
+  color: #8892bf;
 }
 .how .row .pull {
   max-width: 32px;
@@ -187,7 +187,7 @@ button:focus {
   margin-bottom: 6px;
 }
 .how .row h3 {
-  color: #f4645f;
+  color: #8892bf;
 }
 .pricing {
   background: #f0f2f1;
@@ -198,8 +198,8 @@ button:focus {
   margin-bottom: 30px;
 }
 .pricing h3 {
-  background: #f4645f;
-  background-image: linear-gradient(to top right, #f7928f, #f4645f);
+  background: #8892bf;
+  background-image: linear-gradient(to top right, #a9b0d1, #8892bf);
   border: 1px solid #ffffff;
   border-radius: 150px;
   box-shadow: 2px 2px 2px #aeaeae;
@@ -218,10 +218,10 @@ button:focus {
   margin-top: -45px;
 }
 .pricing .panel .price-tag {
-  background: #fef7f2;
-  border: 1px solid #f3bd92;
+  background: #8c95c1;
+  border: 1px solid #4f5b93;
   border-radius: 4px;
-  color: #f4645f;
+  color: #ffffff;
   display: block;
   padding: 8px;
   text-align: center;
@@ -275,10 +275,10 @@ button:focus {
 }
 .testimonials .carousel-indicators li {
   background: #ffffff;
-  border: 1px solid #f4645f !important;
+  border: 1px solid #8892bf !important;
 }
 .shrug {
-  color: #f4645f;
+  color: #8892bf;
   font-size: 80px;
   text-align: center;
 }
@@ -292,6 +292,9 @@ button:focus {
   position: absolute;
   text-align: center;
   width: 100%;
+}
+.credits a {
+  color: #8892bf;
 }
 .credits a:hover {
   color: #ffffff;

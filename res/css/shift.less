@@ -1,8 +1,8 @@
 /* Variables */
 @grey: #f0f2f1;
 @white: #fff;
-@primary: #f4645f;
-@secondary: #f3bd92;
+@primary: #8892bf;
+@secondary: #4f5b93;
 @text-grey: #aeaeae;
 @text: #525252;
 @black: #525252;
@@ -290,7 +290,7 @@ h1, h2, h3, h4, h5, h6 {
             background: lighten(@secondary, 21%);;
             border: 1px solid @secondary;
             border-radius: 4px;
-            color: @primary;
+            color: @white;
             display: block;
             padding: 8px;
             text-align: center;
@@ -377,8 +377,11 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     width: 100%;
 
-    a:hover {
-        color: @white;
+    a {
+        color: @primary;
+        &:hover {
+            color: @white;
+        }
     }
 
     .social-icons {
